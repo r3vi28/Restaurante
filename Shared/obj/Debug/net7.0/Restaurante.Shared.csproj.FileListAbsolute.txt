@@ -1,0 +1,12 @@
+C:\WorkSpace\LP\LP4\Restaurante\Shared\bin\Debug\net7.0\Restaurante.Shared.deps.json
+C:\WorkSpace\LP\LP4\Restaurante\Shared\bin\Debug\net7.0\Restaurante.Shared.dll
+C:\WorkSpace\LP\LP4\Restaurante\Shared\bin\Debug\net7.0\Restaurante.Shared.pdb
+C:\WorkSpace\LP\LP4\Restaurante\Shared\obj\Debug\net7.0\Restaurante.Shared.csproj.AssemblyReference.cache
+C:\WorkSpace\LP\LP4\Restaurante\Shared\obj\Debug\net7.0\Restaurante.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\WorkSpace\LP\LP4\Restaurante\Shared\obj\Debug\net7.0\Restaurante.Shared.AssemblyInfoInputs.cache
+C:\WorkSpace\LP\LP4\Restaurante\Shared\obj\Debug\net7.0\Restaurante.Shared.AssemblyInfo.cs
+C:\WorkSpace\LP\LP4\Restaurante\Shared\obj\Debug\net7.0\Restaurante.Shared.csproj.CoreCompileInputs.cache
+C:\WorkSpace\LP\LP4\Restaurante\Shared\obj\Debug\net7.0\Restaurante.Shared.dll
+C:\WorkSpace\LP\LP4\Restaurante\Shared\obj\Debug\net7.0\refint\Restaurante.Shared.dll
+C:\WorkSpace\LP\LP4\Restaurante\Shared\obj\Debug\net7.0\Restaurante.Shared.pdb
+C:\WorkSpace\LP\LP4\Restaurante\Shared\obj\Debug\net7.0\ref\Restaurante.Shared.dll
