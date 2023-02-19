@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Restaurante.Shared.Requests;
 
 namespace Restaurante.Server.Models;
 
@@ -16,4 +17,26 @@ public class RolUsuario
     public bool PermisoParaCrear { get; set; }
     public bool PermisoParaEditar { get; set; }
     public bool PermisoParaEliminar { get; set; }
+
+    public static RolUsuario Crear(RolUsuarioCreateRequest request)
+    {
+        return new RolUsuario(){
+            Nombre = request.Nombre,
+            PermisoParaCrear = request.PermisoParaCrear,
+            PermisoParaEditar = request.PermisoParaEditar,
+            PermisoParaEliminar = request.PermisoParaEliminar
+        };
+    }
+
+    public void Modificar(RolUsuarioUpdateRequest request)
+    {
+        if(Nombre != request.Nombre)
+            Nombre = request.Nombre;
+        if(PermisoParaCrear != request.PermisoParaCrear)
+            PermisoParaCrear = request.PermisoParaCrear;
+        if(PermisoParaEditar != request.PermisoParaEditar)
+            PermisoParaEditar = request.PermisoParaEditar;
+        if(PermisoParaEliminar != request.PermisoParaEliminar)
+            PermisoParaEliminar = request.PermisoParaEliminar;
+    }
 }

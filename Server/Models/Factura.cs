@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Restaurante.Shared.Requests;
 
 namespace Restaurante.Server.Models;
 
@@ -14,4 +15,29 @@ public class Factura
     public virtual Usuario CajeroNombre { get; set; } = null!;
     public int MetodoPagoId { get; set; }
     public virtual MetodoPago MetodoPago { get; set; } = null!;
+
+    public static Factura Crear(FacturaCreateRequest request)
+    {
+        return new Factura(){
+            Date = request.Date,
+            ProductoId = request.ProductoId,
+            CostoTotal = request.CostoTotal,
+            CajeroId = request.CajeroId,
+            MetodoPagoId = request.MetodoPagoId
+        };
+    }
+
+    public void Modificar(FacturaUpdateRequest request)
+    {
+        if(Date != request.Date)
+            Date = request.Date;
+        if(ProductoId != request.ProductoId)
+            ProductoId = request.ProductoId;
+        if(CostoTotal != request.CostoTotal)
+            CostoTotal = request.CostoTotal;
+        if(CajeroId != request.CajeroId)
+            CajeroId = request.CajeroId;
+        if(MetodoPagoId != request.MetodoPagoId)
+            MetodoPagoId = request.MetodoPagoId;
+    }
 }
