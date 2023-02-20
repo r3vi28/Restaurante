@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Restaurante.Shared.Records;
 using Restaurante.Shared.Requests;
 
 namespace Restaurante.Server.Models;
@@ -11,7 +12,7 @@ public class AsignacionMesa
     public virtual Mesa Mesa { get; set; } = null!;
     public DateTime Hora { get; set; }
     public int MesaStatusId { get; set; }
-    public virtual List<MesaStatus> MesaStatus { get; set; } = null!;
+    public virtual MesaStatus MesaStatus { get; set; } = null!;
 
     public static AsignacionMesa Crear(AsignacionMesaCreateRequest request)
         {
@@ -31,8 +32,8 @@ public class AsignacionMesa
                 Hora = request.Hora;
         }
     
-    // public AsignacionMesaRecord ToRecord()
-    // {
-    //     return new AsignacionMesaRecord(Id, MesaId, Mesa, Hora, MesaStatusId, MesaStatus);
-    // }
+    public AsignacionMesaRecord ToRecord()
+    {
+        return new AsignacionMesaRecord(Id, MesaId, Mesa.ToRecord(), Hora, MesaStatusId, MesaStatus.ToRecord());
+    }
 }

@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Restaurante.Shared.Records;
 using Restaurante.Shared.Requests;
 
 namespace Restaurante.Server.Models;
@@ -38,5 +39,10 @@ public class Reservacion
             NumeroPersonas = request.NumeroPersonas;
         if(MesaId != request.MesaId)
             MesaId = request.MesaId;
+    }
+
+    public ReservacionRecord ToRecord()
+    {
+        return new ReservacionRecord(Id, ClienteId, Cliente.ToRecord(), Fecha, Hora, NumeroPersonas, MesaId, MesaElegida.ToRecord());
     }
 }

@@ -1,3 +1,4 @@
+using Restaurante.Shared.Records;
 using Restaurante.Shared.Requests;
 
 namespace Restaurante.Server.Models;
@@ -23,5 +24,10 @@ public class MetodoPago
             Nombre = request.Nombre;
         if(Descripcion != request.Descripcion)
             Descripcion = request.Descripcion;
+    }
+
+    public MetodoPagoRecord ToRecord()
+    {
+        return new MetodoPagoRecord(Id, Nombre, Descripcion);
     }
 }

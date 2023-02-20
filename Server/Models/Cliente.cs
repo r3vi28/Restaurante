@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Restaurante.Shared.Records;
 using Restaurante.Shared.Requests;
 
 namespace Restaurante.Server.Models;
@@ -28,5 +29,10 @@ public class Cliente
             Direccion = request.Direccion;
         if(Telefono != request.Telefono)
             Telefono = request.Telefono;
+    }
+
+    public ClienteRecord ToRecord()
+    {
+        return new ClienteRecord(Id, Nombre, Direccion, Telefono);
     }
 }

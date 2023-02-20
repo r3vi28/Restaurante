@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Restaurante.Shared.Records;
 using Restaurante.Shared.Requests;
 
 namespace Restaurante.Server.Models;
@@ -28,5 +29,10 @@ public class Producto
             Descripcion = request.Descripcion;
         if(Precio != request.Precio)
             Precio = request.Precio;
+    }
+
+    public ProductoRecord ToRecord()
+    {
+        return new ProductoRecord(Id, Nombre, Descripcion, Precio);
     }
 }

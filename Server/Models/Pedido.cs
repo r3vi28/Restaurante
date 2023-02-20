@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Restaurante.Shared.Records;
 using Restaurante.Shared.Requests;
 
 namespace Restaurante.Server.Models;
@@ -8,9 +9,9 @@ public class Pedido
     [Key]
     public int Id { get; set; }
     public int ProductoId { get; set; }
-    public virtual List<Producto> Productos { get; set; } = null!;
+    public virtual Producto Productos { get; set; } = null!;
     public int PedidoStatusId { get; set; }
-    public virtual PedidoStatus Status { get; set; } = null!;
+    public virtual PedidoStatus PedidoStatus { get; set; } = null!;
     public DateTime DeliveryTime { get; set; }
 
     public static Pedido Crear(PedidoCreateRequest request)
@@ -30,5 +31,10 @@ public class Pedido
             PedidoStatusId = request.PedidoStatusId;
         if(DeliveryTime != request.DeliveryTime)
             DeliveryTime = request.DeliveryTime;
+    }
+
+    public PedidoRecord ToRecord()
+    {
+        return new PedidoRecord(Id, ProductoId, Productos.ToRecord(), PedidoStatusId, PedidoStatus.ToRecord(), DeliveryTime);
     }
 }

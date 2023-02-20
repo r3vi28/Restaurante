@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Restaurante.Shared.Records;
 using Restaurante.Shared.Requests;
 
 namespace Restaurante.Server.Models;
@@ -21,5 +22,10 @@ public class PedidoStatus
     {
         if(Nombre != request.Nombre)
             Nombre = request.Nombre;
+    }
+
+    public PedidoStatusRecord ToRecord()
+    {
+        return new PedidoStatusRecord(Id, Nombre);
     }
 }

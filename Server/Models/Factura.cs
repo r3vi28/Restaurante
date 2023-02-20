@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Restaurante.Shared.Records;
 using Restaurante.Shared.Requests;
 
 namespace Restaurante.Server.Models;
@@ -9,7 +10,7 @@ public class Factura
     public int Id { get; set; }
     public DateTime Date { get; set; }
     public int ProductoId { get; set; }
-    public virtual List<Producto> Productos { get; set; } = null!;
+    public virtual Producto Productos { get; set; } = null!;
     public float CostoTotal { get; set; }
     public int CajeroId { get; set; }
     public virtual Usuario CajeroNombre { get; set; } = null!;
@@ -39,5 +40,10 @@ public class Factura
             CajeroId = request.CajeroId;
         if(MetodoPagoId != request.MetodoPagoId)
             MetodoPagoId = request.MetodoPagoId;
+    }
+
+    public FacturaRecord ToRecord()
+    {
+        return new FacturaRecord(Id, Date, ProductoId, Productos.ToRecord(), CostoTotal, CajeroId, CajeroNombre.ToRecord(), MetodoPagoId, MetodoPago.ToRecord());
     }
 }

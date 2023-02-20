@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Restaurante.Shared.Records;
 using Restaurante.Shared.Requests;
 
 namespace Restaurante.Server.Models;
@@ -20,5 +21,10 @@ public class Mesa
     {
         if(Tamaño != request.Tamaño)
             Tamaño = request.Tamaño;
+    }
+
+    public MesaRecord ToRecord()
+    {
+        return new MesaRecord(Id, Tamaño);
     }
 }

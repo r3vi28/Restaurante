@@ -7,7 +7,8 @@ public class ReporteRecord
     {
         
     }
-    public ReporteRecord(int id, DateTime fechaInicio, DateTime fechaFinal, int productosMasVendidosId, List<ProductoRecord> productosMasVendidos, float ventasTotales)
+
+    public ReporteRecord(int id, DateTime fechaInicio, DateTime fechaFinal, int productosMasVendidosId, ProductoRecord productosMasVendidos, float ventasTotales)
     {
         Id = id;
         FechaInicio = fechaInicio;
@@ -21,7 +22,7 @@ public class ReporteRecord
     public DateTime FechaInicio { get; set; }
     public DateTime FechaFinal { get; set; }
     public int ProductosMasVendidosId { get; set; }
-    public virtual List<ProductoRecord> ProductosMasVendidos { get; set; } = null!;
+    public virtual ProductoRecord ProductosMasVendidos { get; set; } = null!;
     public float VentasTotales { get; set; }
 }
 

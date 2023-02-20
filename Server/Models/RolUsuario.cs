@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Restaurante.Shared.Records;
 using Restaurante.Shared.Requests;
 
 namespace Restaurante.Server.Models;
@@ -38,5 +39,10 @@ public class RolUsuario
             PermisoParaEditar = request.PermisoParaEditar;
         if(PermisoParaEliminar != request.PermisoParaEliminar)
             PermisoParaEliminar = request.PermisoParaEliminar;
+    }
+
+    public RolUsuarioRecord ToRecord()
+    {
+        return new RolUsuarioRecord(Id, Nombre, PermisoParaCrear, PermisoParaEditar, PermisoParaEliminar);
     }
 }

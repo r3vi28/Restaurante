@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Restaurante.Shared.Records;
 using Restaurante.Shared.Requests;
 
 namespace Restaurante.Server.Models;
@@ -10,7 +11,7 @@ public class Reporte
     public DateTime FechaInicio { get; set; }
     public DateTime FechaFinal { get; set; }
     public int ProductosMasVendidosId { get; set; }
-    public virtual List<Producto> ProductosMasVendidos { get; set; } = null!;
+    public virtual Producto ProductosMasVendidos { get; set; } = null!;
     public float VentasTotales { get; set; }
 
     public static Reporte Crear(ReporteCreateRequest request)
@@ -33,5 +34,10 @@ public class Reporte
             ProductosMasVendidosId = request.ProductosMasVendidosId;
         if(VentasTotales != request.VentasTotales)
             VentasTotales = request.VentasTotales;
+    }
+
+    public ReporteRecord ToRecord()
+    {
+        return new ReporteRecord(Id, FechaInicio, FechaFinal, ProductosMasVendidosId, ProductosMasVendidos.ToRecord(), VentasTotales);
     }
 }

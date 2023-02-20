@@ -7,7 +7,7 @@ public class AsignacionMesaRecord
     {
         
     }
-    public AsignacionMesaRecord(int id, int mesaId, MesaRecord mesa, DateTime hora, int mesaStatusId, List<MesaStatusRecord> mesaStatus)
+    public AsignacionMesaRecord(int id, int mesaId, MesaRecord mesa, DateTime hora, int mesaStatusId, MesaStatusRecord mesaStatus)
     {
         Id = id;
         MesaId = mesaId;
@@ -22,5 +22,5 @@ public class AsignacionMesaRecord
     public virtual MesaRecord Mesa { get; set; } = null!;
     public DateTime Hora { get; set; }
     public int MesaStatusId { get; set; }
-    public virtual List<MesaStatusRecord> MesaStatus { get; set; } = null!;
+    public virtual MesaStatusRecord MesaStatus { get; set; } = null!;
 }

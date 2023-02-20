@@ -1,6 +1,7 @@
 using System.Net.Cache;
 using System.ComponentModel.DataAnnotations;
 using Restaurante.Shared.Requests;
+using Restaurante.Shared.Records;
 
 namespace Restaurante.Server.Models;
 
@@ -34,5 +35,10 @@ public class Usuario
             NombreUsuario = request.NombreUsuario;
         if(Password != request.Password)
             Password = request.Password;
+    }
+
+    public UsuarioRecord ToRecord()
+    {
+        return new UsuarioRecord(Id, UsuarioRolId, UsuarioRol.ToRecord(), Nombre, NombreUsuario, Password);
     }
 }
