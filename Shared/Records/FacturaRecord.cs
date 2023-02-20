@@ -3,6 +3,23 @@ namespace Restaurante.Shared.Records;
 
 public class FacturaRecord
 {
+    public FacturaRecord()
+    {
+        
+    }
+    public FacturaRecord(int id, DateTime date, int productoId, List<ProductoRecord> productos, float costoTotal, int cajeroId, UsuarioRecord cajeroNombre, int metodoPagoId, MetodoPagoRecord metodoPago)
+    {
+        Id = id;
+        Date = date;
+        ProductoId = productoId;
+        Productos = productos;
+        CostoTotal = costoTotal;
+        CajeroId = cajeroId;
+        CajeroNombre = cajeroNombre;
+        MetodoPagoId = metodoPagoId;
+        MetodoPago = metodoPago;
+    }
+
     public int Id { get; set; }
     public DateTime Date { get; set; }
     public int ProductoId { get; set; }

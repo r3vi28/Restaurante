@@ -3,6 +3,22 @@ namespace Restaurante.Shared.Records;
 
 public class ReservacionRecord
 {
+    public ReservacionRecord()
+    {
+        
+    }
+    public ReservacionRecord(int id, int clienteId, ClienteRecord cliente, DateTime fecha, TimeSpan hora, int numeroPersonas, int mesaId, MesaRecord mesaElegida)
+    {
+        Id = id;
+        ClienteId = clienteId;
+        Cliente = cliente;
+        Fecha = fecha;
+        Hora = hora;
+        NumeroPersonas = numeroPersonas;
+        MesaId = mesaId;
+        MesaElegida = mesaElegida;
+    }
+
     public int Id { get; set; }
     public int ClienteId { get; set; }
     public virtual ClienteRecord Cliente { get; set; } = null!;
