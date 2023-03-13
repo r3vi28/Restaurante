@@ -24,10 +24,17 @@ public class ResultList<T>: Result
         };
     }
 
+    public static ResultList<T> Success(IEnumerable<T> items)
+    {
+        return new ResultList<T>(){
+            Succeeded = true, Message = new List<string>(){"👌"},
+            Items = items
+        };
+    }
     public static ResultList<T> Success(IEnumerable<T> items, string message)
     {
         return new ResultList<T>(){
-            Succeeded = true, Message = new List<string>(){"❌"},
+            Succeeded = true, Message = new List<string>(){message},
             Items = items
         };
     }
