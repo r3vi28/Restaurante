@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gNy3681JHTFb2DEJtdUg9QYpssawRusKm40wjTr/PIvKluTAH8Vda0AomU5z9yskGjbkGHqzgFqTTlfZDGUr1g==",
+  "dgSpecHash": "lSt5sxJaud/RMJFcxjzeOWDKR8ep3+2Ar3yUuBhKGpxcSHHbd2iBGssYdaJV5ayEXUPOWBLoF3qgsAJUXzbcFw==",
   "success": true,
   "projectFilePath": "C:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\Restaurante.Client.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "C:\\Users\\moise\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\moise\\.nuget\\packages\\microsoft.jsinterop\\7.0.0\\microsoft.jsinterop.7.0.0.nupkg.sha512",
     "C:\\Users\\moise\\.nuget\\packages\\microsoft.jsinterop.webassembly\\7.0.0\\microsoft.jsinterop.webassembly.7.0.0.nupkg.sha512",
+    "C:\\Users\\moise\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\moise\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
     "C:\\Users\\moise\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\moise\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
