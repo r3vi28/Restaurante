@@ -1,0 +1,49 @@
+@using Client.Managers;
+@using Restaurante.Shared.Records;
+@using Restaurante.Shared.Wrapper;
+
+@inject IProductoManager productosManager;
+
+@page "/productos"
+<h1>Productos</h1>
+@if(Productos != null)
+{
+    <table class="table">
+        <thead class="table-dark">
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Descripcion</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var producto in  Productos)
+            {
+                <tr>
+                    <td>@producto.Id</td>
+                    <td>@producto.Nombre</td>
+                    <td>@producto.Descripcion</td>
+                    <td>@producto.Precio</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Cargando...</p>
+}
+
+@code
+{
+    public List<ProductoRecord>? Productos { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await productosManager.GetAsync();
+        if(response.Succeeded){
+            Productos = response.Items.ToList();
+        }
+    }
+}
+

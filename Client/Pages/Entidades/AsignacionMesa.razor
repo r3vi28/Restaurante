@@ -1,0 +1,50 @@
+@using Client.Managers;
+@using Restaurante.Shared.Records;
+@using Restaurante.Shared.Wrapper;
+
+@inject IAsignacionMesaManager asignacionesManager;
+
+@page "/asignacionesmesas"
+<h1>Asignaciones de mesas</h1>
+@if(Asignaciones != null)
+{
+    <table class="table">>
+        <thead class="table-dark">
+            <tr>
+                <th>Id</th>
+                <th>Mesa</th>
+                <th>Hora</th>
+                <th>Estado de la mesa</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var asignacion in Asignaciones)
+            {
+                <tr>
+                    <td>@asignacion.Id</td>
+                    <td>@asignacion.MesaId</td>
+                    <td>@asignacion.Hora</td>
+                    <td>@asignacion.MesaStatus.Nombre</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+}
+else
+{
+    <p>Cargando...</p>
+}
+
+@code
+{
+    public List<AsignacionMesaRecord>? Asignaciones { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await asignacionesManager.GetAsync();
+        if(response.Succeeded){
+            Asignaciones = response.Items.ToList();
+        }
+    }
+}
+

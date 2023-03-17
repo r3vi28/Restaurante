@@ -838,3 +838,7 @@ C:\WorkSpace\LP\LP4\Restaurante\Client\obj\Debug\net7.0\Restaurante.Client.dll
 C:\WorkSpace\LP\LP4\Restaurante\Client\obj\Debug\net7.0\refint\Restaurante.Client.dll
 C:\WorkSpace\LP\LP4\Restaurante\Client\obj\Debug\net7.0\Restaurante.Client.pdb
 C:\WorkSpace\LP\LP4\Restaurante\Client\obj\Debug\net7.0\ref\Restaurante.Client.dll
+C:\WorkSpace\LP\LP4\Restaurante\Client\bin\Debug\net7.0\wwwroot\_framework\Newtonsoft.Json.dll
+C:\WorkSpace\LP\LP4\Restaurante\Client\bin\Debug\net7.0\wwwroot\_framework\Newtonsoft.Json.dll.gz
+C:\WorkSpace\LP\LP4\Restaurante\Client\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\WorkSpace\LP\LP4\Restaurante\Client\obj\Debug\net7.0\build-gz\Oxpzl2gD.gz

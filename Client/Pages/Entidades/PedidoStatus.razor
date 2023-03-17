@@ -1,0 +1,45 @@
+@using Client.Managers;
+@using Restaurante.Shared.Records;
+@using Restaurante.Shared.Wrapper;
+
+@inject IPedidoStatusManager pedidoStatusesManager;
+
+@page "/pedidostatuses"
+<h1>Estado de los pedidos</h1>
+@if(PedidoStatuses != null)
+{
+    <table class="table">
+        <thead class="table-dark">
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var pedidosstatus in PedidoStatuses)
+            {
+                <tr>
+                    <td>@pedidosstatus.Id</td>
+                    <td>@pedidosstatus.Nombre</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Cargando...</p>
+}
+
+@code
+{
+    public List<PedidoStatusRecord>? PedidoStatuses { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await pedidoStatusesManager.GetAsync();
+        if(response.Succeeded){
+            PedidoStatuses = response.Items.ToList();
+        }
+    }
+}
+

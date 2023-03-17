@@ -5,7 +5,7 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "hash": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7\/p4nS6D\/0=",
       "url": "css\/bootstrap\/bootstrap.min.css"
     },
     {
@@ -837,7 +837,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-4mh03qTse0uNR+dQ6ydExm4jJXph0RE8zGNCtF0jiNA=",
+      "hash": "sha256-w6LJ8\/fN66yyhSE7gfqh2sQryEoI0a5DAgwhYofSU0k=",
       "url": "_framework\/dotnet.7.0.2.t0mszhzzw0.js"
     },
     {
@@ -887,7 +887,11 @@
     {
       "hash": "sha256-4DbejnQ7xEZ0+AJ4N578t7Kq0NZJf92iz8RlUSOyI5A=",
       "url": "_framework\/blazor.boot.json"
+    },
+    {
+      "hash": "sha256-IsZJ91\/OW+fHzNqIgEc7Y072ns8z9dGritiSyvR9Wgc=",
+      "url": "_framework\/Newtonsoft.Json.dll"
     }
   ],
-  "version": "AHUb3OTk"
+  "version": "s2daSbtu"
 };

@@ -1,0 +1,51 @@
+@using Client.Managers;
+@using Restaurante.Shared.Records;
+@using Restaurante.Shared.Wrapper;
+
+@inject IReporteManager reportesManager;
+
+@page "/reportes"
+<h1>Reportes</h1>
+@if(Reportes != null)
+{
+    <table class="table">
+        <thead class="table-dark">
+            <tr>
+                <th>Id</th>
+                <th>Fecha inicio</th>
+                <th>Fecha final</th>
+                <th>Productos mas vendidos</th>
+                <th>Ventas totales</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var reporte in Reportes)
+            {
+                <tr>
+                    <td>@reporte.Id</td>
+                    <td>@reporte.FechaInicio</td>
+                    <td>@reporte.FechaFinal</td>
+                    <td>@reporte.ProductosMasVendidos.Nombre $@reporte.ProductosMasVendidos.Precio</td>
+                    <td>@reporte.VentasTotales</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Cargando...</p>
+}
+
+@code
+{
+    public List<ReporteRecord>? Reportes { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await reportesManager.GetAsync();
+        if(response.Succeeded){
+            Reportes = response.Items.ToList();
+        }
+    }
+}
+

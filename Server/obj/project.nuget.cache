@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Haa/uHJDhWkOULRswJkLBmm+zEatsErmo+rlAhwsTMFOH+THVHromjDp5nh48lWCAbL4a7LDCD7DyiQW0tw8Ew==",
+  "dgSpecHash": "XlXCYe6gZZH8pwNY8dAHPITfq7lpNR5r82cuvyYs/RrkVbSQnswX2dRc4J+wtf1+t8Qjw+OJ03PV3XtsX/DTDw==",
   "success": true,
   "projectFilePath": "C:\\WorkSpace\\LP\\LP4\\Restaurante\\Server\\Restaurante.Server.csproj",
   "expectedPackageFiles": [
@@ -78,6 +78,7 @@
     "C:\\Users\\moise\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\moise\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\moise\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\moise\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\moise\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\moise\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\moise\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",

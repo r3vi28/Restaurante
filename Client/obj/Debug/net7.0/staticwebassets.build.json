@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DRrOoqyUJyhbGvTA3GOl5h99GakEoJcExbEC7URAg2g=",
+  "Hash": "5iVrhCBBES04u4+OgsLbA1O99iBMZsjkt20LxdkFlXA=",
   "Source": "Restaurante.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -661,6 +661,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\moise\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.2\\runtimes\\browser-wasm\\lib\\net7.0\\netstandard.dll"
+    },
+    {
+      "Identity": "C:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Newtonsoft.Json.dll",
+      "SourceId": "Restaurante.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Newtonsoft.Json.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\moise\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\net6.0\\Newtonsoft.Json.dll"
     },
     {
       "Identity": "C:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Restaurante.Client.dll",
@@ -5931,6 +5948,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Security.Cryptography.Cng.dll"
+    },
+    {
+      "Identity": "C:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\obj\\Debug\\net7.0\\build-gz\\Oxpzl2gD.gz",
+      "SourceId": "Restaurante.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Newtonsoft.Json.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Newtonsoft.Json.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Newtonsoft.Json.dll"
     },
     {
       "Identity": "C:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\obj\\Debug\\net7.0\\build-gz\\OXsKETac.gz",

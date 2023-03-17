@@ -1,0 +1,45 @@
+@using Client.Managers;
+@using Restaurante.Shared.Records;
+@using Restaurante.Shared.Wrapper;
+
+@inject IMesaStatusManager mesaStatusesManager;
+
+@page "/mesastatuses"
+<h1>Estados de las mesas</h1>
+@if(MesaStatuses != null)
+{
+    <table class="table">
+        <thead class="table-dark">
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var mesastatus in MesaStatuses)
+            {
+                <tr>
+                    <td>@mesastatus.Id</td>
+                    <td>@mesastatus.Nombre</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Cargando...</p>
+}
+
+@code
+{
+    public List<MesaStatusRecord>? MesaStatuses { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await mesaStatusesManager.GetAsync();
+        if(response.Succeeded){
+            MesaStatuses = response.Items.ToList();
+        }
+    }
+}
+

@@ -248,43 +248,6 @@
         }
       },
       {
-        "HashCode": 1027546914,
-        "Kind": "Components.Component",
-        "Name": "Restaurante.Client.Pages.FetchData",
-        "AssemblyName": "Restaurante.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Restaurante.Client.Pages.FetchData",
-          "Common.TypeNamespace": "Restaurante.Client.Pages",
-          "Common.TypeNameIdentifier": "FetchData"
-        }
-      },
-      {
-        "HashCode": 1234759037,
-        "Kind": "Components.Component",
-        "Name": "Restaurante.Client.Pages.FetchData",
-        "AssemblyName": "Restaurante.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Restaurante.Client.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Restaurante.Client.Pages.FetchData",
-          "Common.TypeNamespace": "Restaurante.Client.Pages",
-          "Common.TypeNameIdentifier": "FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -156529954,
         "Kind": "Components.Component",
         "Name": "Restaurante.Client.Pages.Index",
@@ -322,39 +285,483 @@
         }
       },
       {
-        "HashCode": -1598218759,
+        "HashCode": -658813807,
         "Kind": "Components.Component",
-        "Name": "Restaurante.Client.Pages.Counter",
+        "Name": "Restaurante.Client.Pages.Entidades.AsignacionMesa",
         "AssemblyName": "Restaurante.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Counter"
+            "TagName": "AsignacionMesa"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Restaurante.Client.Pages.Counter",
-          "Common.TypeNamespace": "Restaurante.Client.Pages",
-          "Common.TypeNameIdentifier": "Counter"
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.AsignacionMesa",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "AsignacionMesa"
         }
       },
       {
-        "HashCode": -1766406046,
+        "HashCode": -1384571827,
         "Kind": "Components.Component",
-        "Name": "Restaurante.Client.Pages.Counter",
+        "Name": "Restaurante.Client.Pages.Entidades.AsignacionMesa",
         "AssemblyName": "Restaurante.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Restaurante.Client.Pages.Counter"
+            "TagName": "Restaurante.Client.Pages.Entidades.AsignacionMesa"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Restaurante.Client.Pages.Counter",
-          "Common.TypeNamespace": "Restaurante.Client.Pages",
-          "Common.TypeNameIdentifier": "Counter",
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.AsignacionMesa",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "AsignacionMesa",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1900696182,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Entidades.Cliente",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Cliente"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.Cliente",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "Cliente"
+        }
+      },
+      {
+        "HashCode": -1734026942,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Entidades.Cliente",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Restaurante.Client.Pages.Entidades.Cliente"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.Cliente",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "Cliente",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 238081429,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Entidades.Mesa",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Mesa"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.Mesa",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "Mesa"
+        }
+      },
+      {
+        "HashCode": -1478769665,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Entidades.Mesa",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Restaurante.Client.Pages.Entidades.Mesa"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.Mesa",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "Mesa",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 685256515,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Entidades.MesaStatus",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MesaStatus"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.MesaStatus",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "MesaStatus"
+        }
+      },
+      {
+        "HashCode": -1700386621,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Entidades.MesaStatus",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Restaurante.Client.Pages.Entidades.MesaStatus"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.MesaStatus",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "MesaStatus",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1094698374,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Entidades.MetodoPago",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MetodoPago"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.MetodoPago",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "MetodoPago"
+        }
+      },
+      {
+        "HashCode": 899536051,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Entidades.MetodoPago",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Restaurante.Client.Pages.Entidades.MetodoPago"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.MetodoPago",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "MetodoPago",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1488788514,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Entidades.Factura",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Factura"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.Factura",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "Factura"
+        }
+      },
+      {
+        "HashCode": 815527646,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Entidades.Factura",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Restaurante.Client.Pages.Entidades.Factura"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.Factura",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "Factura",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1245187225,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Entidades.Pedido",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Pedido"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.Pedido",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "Pedido"
+        }
+      },
+      {
+        "HashCode": -1245901496,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Entidades.Pedido",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Restaurante.Client.Pages.Entidades.Pedido"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.Pedido",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "Pedido",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -976223249,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Entidades.PedidoStatus",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PedidoStatus"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.PedidoStatus",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "PedidoStatus"
+        }
+      },
+      {
+        "HashCode": -1634923941,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Entidades.PedidoStatus",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Restaurante.Client.Pages.Entidades.PedidoStatus"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.PedidoStatus",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "PedidoStatus",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 405122596,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Entidades.Producto",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Producto"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.Producto",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "Producto"
+        }
+      },
+      {
+        "HashCode": 48789956,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Entidades.Producto",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Restaurante.Client.Pages.Entidades.Producto"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.Producto",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "Producto",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -585570865,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Entidades.Reporte",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Reporte"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.Reporte",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "Reporte"
+        }
+      },
+      {
+        "HashCode": -44383627,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Entidades.Reporte",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Restaurante.Client.Pages.Entidades.Reporte"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.Reporte",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "Reporte",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 2088128814,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Entidades.Reservacion",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Reservacion"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.Reservacion",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "Reservacion"
+        }
+      },
+      {
+        "HashCode": 1455082625,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Entidades.Reservacion",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Restaurante.Client.Pages.Entidades.Reservacion"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.Reservacion",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "Reservacion",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -150102440,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Entidades.Usuario",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Usuario"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.Usuario",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "Usuario"
+        }
+      },
+      {
+        "HashCode": 209593639,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Entidades.Usuario",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Restaurante.Client.Pages.Entidades.Usuario"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.Usuario",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "Usuario",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -2102417175,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Entidades.UsuariosRoles",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "UsuariosRoles"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.UsuariosRoles",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "UsuariosRoles"
+        }
+      },
+      {
+        "HashCode": -1861271980,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Entidades.UsuariosRoles",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Restaurante.Client.Pages.Entidades.UsuariosRoles"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Entidades.UsuariosRoles",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Entidades",
+          "Common.TypeNameIdentifier": "UsuariosRoles",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -15916,8 +16323,38 @@
   "RootNamespace": "Restaurante.Client",
   "Documents": [
     {
+      "FilePath": "c:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\Pages\\Entidades\\Producto.razor",
+      "TargetPath": "Pages\\Entidades\\Producto.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "c:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\Shared\\SurveyPrompt.razor",
       "TargetPath": "Shared\\SurveyPrompt.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\Pages\\Entidades\\UsuariosRoles.razor",
+      "TargetPath": "Pages\\Entidades\\UsuariosRoles.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\Pages\\Entidades\\Reservacion.razor",
+      "TargetPath": "Pages\\Entidades\\Reservacion.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\Pages\\Entidades\\Mesa.razor",
+      "TargetPath": "Pages\\Entidades\\Mesa.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\Pages\\Entidades\\Usuario.razor",
+      "TargetPath": "Pages\\Entidades\\Usuario.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\Pages\\Entidades\\Factura.razor",
+      "TargetPath": "Pages\\Entidades\\Factura.razor",
       "FileKind": "component"
     },
     {
@@ -15926,8 +16363,13 @@
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\Pages\\FetchData.razor",
-      "TargetPath": "Pages\\FetchData.razor",
+      "FilePath": "c:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\Pages\\Entidades\\Cliente.razor",
+      "TargetPath": "Pages\\Entidades\\Cliente.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\Pages\\Entidades\\Reporte.razor",
+      "TargetPath": "Pages\\Entidades\\Reporte.razor",
       "FileKind": "component"
     },
     {
@@ -15941,6 +16383,11 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "c:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\Pages\\Entidades\\AsignacionMesa.razor",
+      "TargetPath": "Pages\\Entidades\\AsignacionMesa.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "c:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\Shared\\MainLayout.razor",
       "TargetPath": "Shared\\MainLayout.razor",
       "FileKind": "component"
@@ -15951,8 +16398,23 @@
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\Pages\\Counter.razor",
-      "TargetPath": "Pages\\Counter.razor",
+      "FilePath": "c:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\Pages\\Entidades\\Pedido.razor",
+      "TargetPath": "Pages\\Entidades\\Pedido.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\Pages\\Entidades\\MesaStatus.razor",
+      "TargetPath": "Pages\\Entidades\\MesaStatus.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\Pages\\Entidades\\PedidoStatus.razor",
+      "TargetPath": "Pages\\Entidades\\PedidoStatus.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\WorkSpace\\LP\\LP4\\Restaurante\\Client\\Pages\\Entidades\\MetodoPago.razor",
+      "TargetPath": "Pages\\Entidades\\MetodoPago.razor",
       "FileKind": "component"
     }
   ],

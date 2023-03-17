@@ -89,3 +89,4 @@ C:\WorkSpace\LP\LP4\Restaurante\Server\obj\Debug\net7.0\refint\Restaurante.Serve
 C:\WorkSpace\LP\LP4\Restaurante\Server\obj\Debug\net7.0\Restaurante.Server.pdb
 C:\WorkSpace\LP\LP4\Restaurante\Server\obj\Debug\net7.0\Restaurante.Server.genruntimeconfig.cache
 C:\WorkSpace\LP\LP4\Restaurante\Server\obj\Debug\net7.0\ref\Restaurante.Server.dll
+C:\WorkSpace\LP\LP4\Restaurante\Server\bin\Debug\net7.0\Newtonsoft.Json.dll
