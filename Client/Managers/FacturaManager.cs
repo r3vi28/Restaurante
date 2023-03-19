@@ -11,6 +11,7 @@ public interface IFacturaManager
 {
     Task<ResultList<FacturaRecord>> GetAsync();
     Task<Result<int>> CreateAsync(FacturaCreateRequest request);
+    Task<Result<FacturaRecord>> GetByIdAsync(int Id);
 }
 
 public class FacturaManager : IFacturaManager
@@ -40,6 +41,12 @@ public class FacturaManager : IFacturaManager
     {
         var response = await httpClient.PostAsJsonAsync(FacturaRouteManager.BASE,request);
         return await response.ToResult<int>();
+    }
+
+    public async Task<Result<FacturaRecord>> GetByIdAsync(int Id)
+    {
+        var response = await httpClient.GetAsync(FacturaRouteManager.BuildRoute(Id));
+        return await response.ToResult<FacturaRecord>();
     }
 }
 

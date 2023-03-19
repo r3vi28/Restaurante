@@ -11,6 +11,7 @@ public interface IMesaManager
 {
     Task<ResultList<MesaRecord>> GetAsync();
     Task<Result<int>> CreateAsync(MesaCreateRequest request);
+    Task<Result<MesaRecord>> GetByIdAsync(int Id);
 }
 
 public class MesaManager : IMesaManager
@@ -40,5 +41,11 @@ public class MesaManager : IMesaManager
     {
         var response = await httpClient.PostAsJsonAsync(MesaRouteManager.BASE,request);
         return await response.ToResult<int>();
+    }
+
+    public async Task<Result<MesaRecord>> GetByIdAsync(int Id)
+    {
+        var response = await httpClient.GetAsync(MesaRouteManager.BuildRoute(Id));
+        return await response.ToResult<MesaRecord>();
     }
 }

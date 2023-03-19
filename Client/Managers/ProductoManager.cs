@@ -11,6 +11,7 @@ public interface IProductoManager
 {
     Task<ResultList<ProductoRecord>> GetAsync();
     Task<Result<int>> CreateAsync(ProductoCreateRequest request);
+    Task<Result<ProductoRecord>> GetByIdAsync(int Id);
 }
 
 public class ProductoManager : IProductoManager
@@ -40,5 +41,11 @@ public class ProductoManager : IProductoManager
     {
         var response = await httpClient.PostAsJsonAsync(ProductoRouteManager.BASE,request);
         return await response.ToResult<int>();
+    }
+
+    public async Task<Result<ProductoRecord>> GetByIdAsync(int Id)
+    {
+        var response = await httpClient.GetAsync(ProductoRouteManager.BuildRoute(Id));
+        return await response.ToResult<ProductoRecord>();
     }
 }

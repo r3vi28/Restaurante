@@ -11,6 +11,7 @@ public interface IUsuarioManager
 {
     Task<ResultList<UsuarioRecord>> GetAsync();
     Task<Result<int>> CreateAsync(UsuarioCreateRequest request);
+    Task<Result<UsuarioRecord>> GetByIdAsync(int Id);
 }
 
 public class UsuarioManager : IUsuarioManager
@@ -40,5 +41,11 @@ public class UsuarioManager : IUsuarioManager
     {
         var response = await httpClient.PostAsJsonAsync(UsuarioRouteManager.BASE,request);
         return await response.ToResult<int>();
+    }
+
+    public async Task<Result<UsuarioRecord>> GetByIdAsync(int Id)
+    {
+        var response = await httpClient.GetAsync(UsuarioRouteManager.BuildRoute(Id));
+        return await response.ToResult<UsuarioRecord>();
     }
 }

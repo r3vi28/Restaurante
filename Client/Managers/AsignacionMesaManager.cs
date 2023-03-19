@@ -11,6 +11,7 @@ public interface IAsignacionMesaManager
 {
     Task<ResultList<AsignacionMesaRecord>> GetAsync();
     Task<Result<int>> CreateAsync(AsignacionMesaCreateRequest request);
+    Task<Result<AsignacionMesaRecord>> GetByIdAsync(int Id);
 }
 
 public class AsignacionMesaManager : IAsignacionMesaManager
@@ -40,5 +41,11 @@ public class AsignacionMesaManager : IAsignacionMesaManager
     {
         var response = await httpClient.PostAsJsonAsync(AsignacionMesaRouteManager.BASE,request);
         return await response.ToResult<int>();
+    }
+
+    public async Task<Result<AsignacionMesaRecord>> GetByIdAsync(int Id)
+    {
+        var response = await httpClient.GetAsync(AsignacionMesaRouteManager.BuildRoute(Id));
+        return await response.ToResult<AsignacionMesaRecord>();
     }
 }

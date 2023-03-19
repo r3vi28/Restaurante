@@ -11,6 +11,7 @@ public interface IPedidoManager
 {
     Task<ResultList<PedidoRecord>> GetAsync();
     Task<Result<int>> CreateAsync(PedidoCreateRequest request);
+    Task<Result<PedidoRecord>> GetByIdAsync(int Id);
 }
 
 public class PedidoManager : IPedidoManager
@@ -40,5 +41,11 @@ public class PedidoManager : IPedidoManager
     {
         var response = await httpClient.PostAsJsonAsync(PedidoRouteManager.BASE,request);
         return await response.ToResult<int>();
+    }
+
+    public async Task<Result<PedidoRecord>> GetByIdAsync(int Id)
+    {
+        var response = await httpClient.GetAsync(PedidoRouteManager.BuildRoute(Id));
+        return await response.ToResult<PedidoRecord>();
     }
 }

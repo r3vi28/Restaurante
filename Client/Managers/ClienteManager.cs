@@ -11,6 +11,7 @@ public interface IClienteManager
 {
     Task<ResultList<ClienteRecord>> GetAsync();
     Task<Result<int>> CreateAsync(ClienteCreateRequest request);
+    Task<Result<ClienteRecord>> GetByIdAsync(int Id);
 }
 
 public class ClienteManager : IClienteManager
@@ -40,6 +41,12 @@ public class ClienteManager : IClienteManager
     {
         var response = await httpClient.PostAsJsonAsync(ClienteRouteManager.BASE,request);
         return await response.ToResult<int>();
+    }
+
+    public async Task<Result<ClienteRecord>> GetByIdAsync(int Id)
+    {
+        var response = await httpClient.GetAsync(ClienteRouteManager.BuildRoute(Id));
+        return await response.ToResult<ClienteRecord>();
     }
 }
 

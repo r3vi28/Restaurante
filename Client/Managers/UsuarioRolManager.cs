@@ -11,6 +11,7 @@ public interface IUsuarioRolManager
 {
     Task<ResultList<RolUsuarioRecord>> GetAsync();
     Task<Result<int>> CreateAsync(RolUsuarioCreateRequest request);
+    Task<Result<RolUsuarioRecord>> GetByIdAsync(int Id);
 }
 
 public class UsuarioRolManager : IUsuarioRolManager
@@ -40,5 +41,11 @@ public class UsuarioRolManager : IUsuarioRolManager
     {
         var response = await httpClient.PostAsJsonAsync(RolUsuarioRouteManager.BASE,request);
         return await response.ToResult<int>();
+    }
+
+    public async Task<Result<RolUsuarioRecord>> GetByIdAsync(int Id)
+    {
+        var response = await httpClient.GetAsync(RolUsuarioRouteManager.BuildRoute(Id));
+        return await response.ToResult<RolUsuarioRecord>();
     }
 }

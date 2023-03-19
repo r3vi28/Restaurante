@@ -11,6 +11,7 @@ public interface IReporteManager
 {
     Task<ResultList<ReporteRecord>> GetAsync();
     Task<Result<int>> CreateAsync(ReporteCreateRequest request);
+    Task<Result<ReporteRecord>> GetByIdAsync(int Id);
 }
 
 public class ReporteManager : IReporteManager
@@ -40,5 +41,11 @@ public class ReporteManager : IReporteManager
     {
         var response = await httpClient.PostAsJsonAsync(ReporteRouteManager.BASE,request);
         return await response.ToResult<int>();
+    }
+
+    public async Task<Result<ReporteRecord>> GetByIdAsync(int Id)
+    {
+        var response = await httpClient.GetAsync(ReporteRouteManager.BuildRoute(Id));
+        return await response.ToResult<ReporteRecord>();
     }
 }

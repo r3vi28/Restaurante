@@ -11,6 +11,7 @@ public interface IReservacionManager
 {
     Task<ResultList<ReservacionRecord>> GetAsync();
     Task<Result<int>> CreateAsync(ReservacionCreateRequest request);
+    Task<Result<ReservacionRecord>> GetByIdAsync(int Id);
 }
 
 public class ReservacionManager : IReservacionManager
@@ -40,5 +41,11 @@ public class ReservacionManager : IReservacionManager
     {
         var response = await httpClient.PostAsJsonAsync(ReservacionRouteManager.BASE,request);
         return await response.ToResult<int>();
+    }
+
+    public async Task<Result<ReservacionRecord>> GetByIdAsync(int Id)
+    {
+        var response = await httpClient.GetAsync(ReservacionRouteManager.BuildRoute(Id));
+        return await response.ToResult<ReservacionRecord>();
     }
 }

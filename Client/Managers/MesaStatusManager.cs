@@ -11,6 +11,7 @@ public interface IMesaStatusManager
 {
     Task<ResultList<MesaStatusRecord>> GetAsync();
     Task<Result<int>> CreateAsync(MesaStatusCreateRequest request);
+    Task<Result<MesaStatusRecord>> GetByIdAsync(int Id);
 }
 
 public class MesaStatusManager : IMesaStatusManager
@@ -40,5 +41,11 @@ public class MesaStatusManager : IMesaStatusManager
     {
         var response = await httpClient.PostAsJsonAsync(MesaStatusRouteManager.BASE,request);
         return await response.ToResult<int>();
+    }
+
+    public async Task<Result<MesaStatusRecord>> GetByIdAsync(int Id)
+    {
+        var response = await httpClient.GetAsync(MesaStatusRouteManager.BuildRoute(Id));
+        return await response.ToResult<MesaStatusRecord>();
     }
 }

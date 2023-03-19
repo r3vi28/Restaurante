@@ -11,6 +11,7 @@ public interface IMetodoPagoManager
 {
     Task<ResultList<MetodoPagoRecord>> GetAsync();
     Task<Result<int>> CreateAsync(MetodoPagoCreateRequest request);
+    Task<Result<MetodoPagoRecord>> GetByIdAsync(int Id);
 }
 
 public class MetodoPagoManager : IMetodoPagoManager
@@ -40,5 +41,11 @@ public class MetodoPagoManager : IMetodoPagoManager
     {
         var response = await httpClient.PostAsJsonAsync(MetodoPagoRouteManager.BASE,request);
         return await response.ToResult<int>();
+    }
+
+    public async Task<Result<MetodoPagoRecord>> GetByIdAsync(int Id)
+    {
+        var response = await httpClient.GetAsync(MetodoPagoRouteManager.BuildRoute(Id));
+        return await response.ToResult<MetodoPagoRecord>();
     }
 }
