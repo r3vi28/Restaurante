@@ -2,12 +2,15 @@ using Restaurante.Shared.Wrapper;
 using Restaurante.Shared.Records;
 using Restaurante.Shared.Routes;
 using Restaurante.Client.Extensions;
+using Restaurante.Shared.Requests;
+using System.Net.Http.Json;
 
 namespace Restaurante.Client.Managers;
 
 public interface IUsuarioRolManager
 {
     Task<ResultList<RolUsuarioRecord>> GetAsync();
+    Task<Result<int>> CreateAsync(RolUsuarioCreateRequest request);
 }
 
 public class UsuarioRolManager : IUsuarioRolManager
@@ -31,5 +34,11 @@ public class UsuarioRolManager : IUsuarioRolManager
         {
             return ResultList<RolUsuarioRecord>.Fail(e.Message);
         }
+    }
+
+    public async Task<Result<int>> CreateAsync(RolUsuarioCreateRequest request)
+    {
+        var response = await httpClient.PostAsJsonAsync(RolUsuarioRouteManager.BASE,request);
+        return await response.ToResult<int>();
     }
 }

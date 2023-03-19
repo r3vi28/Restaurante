@@ -2,12 +2,15 @@ using Restaurante.Shared.Wrapper;
 using Restaurante.Shared.Records;
 using Restaurante.Shared.Routes;
 using Restaurante.Client.Extensions;
+using Restaurante.Shared.Requests;
+using System.Net.Http.Json;
 
 namespace Restaurante.Client.Managers;
 
 public interface IFacturaManager
 {
     Task<ResultList<FacturaRecord>> GetAsync();
+    Task<Result<int>> CreateAsync(FacturaCreateRequest request);
 }
 
 public class FacturaManager : IFacturaManager
@@ -31,6 +34,12 @@ public class FacturaManager : IFacturaManager
         {
             return ResultList<FacturaRecord>.Fail(e.Message);
         }
+    }
+
+    public async Task<Result<int>> CreateAsync(FacturaCreateRequest request)
+    {
+        var response = await httpClient.PostAsJsonAsync(FacturaRouteManager.BASE,request);
+        return await response.ToResult<int>();
     }
 }
 

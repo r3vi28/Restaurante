@@ -2,12 +2,15 @@ using Restaurante.Shared.Wrapper;
 using Restaurante.Shared.Records;
 using Restaurante.Shared.Routes;
 using Restaurante.Client.Extensions;
+using Restaurante.Shared.Requests;
+using System.Net.Http.Json;
 
 namespace Restaurante.Client.Managers;
 
 public interface IClienteManager
 {
     Task<ResultList<ClienteRecord>> GetAsync();
+    Task<Result<int>> CreateAsync(ClienteCreateRequest request);
 }
 
 public class ClienteManager : IClienteManager
@@ -31,6 +34,12 @@ public class ClienteManager : IClienteManager
         {
             return ResultList<ClienteRecord>.Fail(e.Message);
         }
+    }
+
+    public async Task<Result<int>> CreateAsync(ClienteCreateRequest request)
+    {
+        var response = await httpClient.PostAsJsonAsync(ClienteRouteManager.BASE,request);
+        return await response.ToResult<int>();
     }
 }
 

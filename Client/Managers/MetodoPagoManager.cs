@@ -2,12 +2,15 @@ using Restaurante.Shared.Wrapper;
 using Restaurante.Shared.Records;
 using Restaurante.Shared.Routes;
 using Restaurante.Client.Extensions;
+using Restaurante.Shared.Requests;
+using System.Net.Http.Json;
 
 namespace Restaurante.Client.Managers;
 
 public interface IMetodoPagoManager
 {
     Task<ResultList<MetodoPagoRecord>> GetAsync();
+    Task<Result<int>> CreateAsync(MetodoPagoCreateRequest request);
 }
 
 public class MetodoPagoManager : IMetodoPagoManager
@@ -31,5 +34,11 @@ public class MetodoPagoManager : IMetodoPagoManager
         {
             return ResultList<MetodoPagoRecord>.Fail(e.Message);
         }
+    }
+
+    public async Task<Result<int>> CreateAsync(MetodoPagoCreateRequest request)
+    {
+        var response = await httpClient.PostAsJsonAsync(MetodoPagoRouteManager.BASE,request);
+        return await response.ToResult<int>();
     }
 }
