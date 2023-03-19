@@ -5118,43 +5118,6 @@
         }
       },
       {
-        "HashCode": 1015286652,
-        "Kind": "Components.Component",
-        "Name": "Restaurante.Client.Shared.NavMenu",
-        "AssemblyName": "Restaurante.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Restaurante.Client.Shared.NavMenu",
-          "Common.TypeNamespace": "Restaurante.Client.Shared",
-          "Common.TypeNameIdentifier": "NavMenu"
-        }
-      },
-      {
-        "HashCode": -267172746,
-        "Kind": "Components.Component",
-        "Name": "Restaurante.Client.Shared.NavMenu",
-        "AssemblyName": "Restaurante.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Restaurante.Client.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Restaurante.Client.Shared.NavMenu",
-          "Common.TypeNamespace": "Restaurante.Client.Shared",
-          "Common.TypeNameIdentifier": "NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1468905243,
         "Kind": "Components.Component",
         "Name": "Restaurante.Client.Shared.SurveyPrompt",
@@ -5316,6 +5279,43 @@
           "Common.TypeNamespace": "Restaurante.Client.Shared",
           "Common.TypeNameIdentifier": "MainLayout",
           "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1015286652,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Shared.NavMenu",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Shared.NavMenu",
+          "Common.TypeNamespace": "Restaurante.Client.Shared",
+          "Common.TypeNameIdentifier": "NavMenu"
+        }
+      },
+      {
+        "HashCode": -267172746,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Shared.NavMenu",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Restaurante.Client.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Shared.NavMenu",
+          "Common.TypeNamespace": "Restaurante.Client.Shared",
+          "Common.TypeNameIdentifier": "NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
