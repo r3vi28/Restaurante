@@ -1,5 +1,5 @@
-@page "/rol/crear"
-@page "/rol/editar/{Id:int}"
+@page "/mesa/crear"
+@page "/mesa/editar/{Id:int}"
 <EditForm Model="@Mesa" OnValidSubmit="Send">
 <h1>@Titulo</h1>
     <DataAnnotationsValidator/>
@@ -22,7 +22,7 @@
 [Parameter]
 public int Id { get; set; } = 0;
 
-public string Titulo => Id>0? "Editar rol":"Crear rol";
+public string Titulo => Id>0? "Editar mesa":"Crear mesa";
 
 public MesaUpdateRequest Mesa { get; set; } = new MesaUpdateRequest();
 

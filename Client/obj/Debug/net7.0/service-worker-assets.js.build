@@ -869,19 +869,19 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-ZU3LKABes5SaMJlWMMkTuyPjpIWK9wlTewQ4q5Lj+H4=",
+      "hash": "sha256-p+1GCMcenbu2\/xObZ+wDd+0XYt+QrHQ5\/kQmGadEGIw=",
       "url": "_framework\/Restaurante.Shared.dll"
     },
     {
-      "hash": "sha256-DboBgm6A\/hYUpcVeOg3DOVRF1BAC55yDdOHZ3UrfGt8=",
+      "hash": "sha256-DxCMdsY+Jkcoc1mCx4dn9q1ULxRmGk\/sN4Uu8R3Ys1c=",
       "url": "_framework\/Restaurante.Shared.pdb"
     },
     {
-      "hash": "sha256-tZGq5gNLMEXP\/eB+GdosRhv0wMLL5dlA6eanGFhjiHM=",
+      "hash": "sha256-FEg5073PU9kw3HK2ldKVCAAEb15ow7lHgOc+6Dt9mdI=",
       "url": "_framework\/Restaurante.Client.dll"
     },
     {
-      "hash": "sha256-CQvI8\/TSD5Oj7YLWH5YAfsZllYhDMe54bUV1bwtN2gA=",
+      "hash": "sha256-StS\/wfXGPxJsbFNoo7cg+eKipfJCHqqW85jNkzRUlWo=",
       "url": "_framework\/Restaurante.Client.pdb"
     },
     {
@@ -889,9 +889,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-BhmpGyGK8O4dU6Qcp+Ot0\/o6A0+\/p+UiNY+EkX+Emjc=",
+      "hash": "sha256-HxSxC8gDVwntr\/5aXp8rRo+q2Ifx+HLymd5bzG2gLpY=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "mBtqTni8"
+  "version": "WegdOtHi"
 };

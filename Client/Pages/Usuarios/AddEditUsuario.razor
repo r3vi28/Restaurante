@@ -1,5 +1,5 @@
-@page "/rol/crear"
-@page "/rol/editar/{Id:int}"
+@page "/usuario/crear"
+@page "/usuario/editar/{Id:int}"
 <EditForm Model="@Usuario" OnValidSubmit="Send">
 <h1>@Titulo</h1>
     <DataAnnotationsValidator/>
@@ -30,7 +30,7 @@
 [Parameter]
 public int Id { get; set; } = 0;
 
-public string Titulo => Id>0? "Editar rol":"Crear rol";
+public string Titulo => Id>0? "Editar usuario":"Crear usuario";
 
 public UsuarioUpdateRequest Usuario { get; set; } = new UsuarioUpdateRequest();
 
