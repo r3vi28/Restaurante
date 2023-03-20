@@ -5,19 +5,19 @@ public class ResultList<T>: Result
 {
     public IEnumerable<T> Items { get; set; } = default!;
 
-    public static ResultList<T> Fail()
+    public static new ResultList<T> Fail()
     {
         return new ResultList<T>(){
             Succeeded = false, Message = new List<string>(){"❌"}
         };
     }
-    public static ResultList<T> Fail(string message)
+    public static new ResultList<T> Fail(string message)
     {
         return new ResultList<T>(){
             Succeeded = false, Message = new List<string>(){message}
         };
     }
-    public static ResultList<T> Fail(List<string> messages)
+    public static new ResultList<T> Fail(List<string> messages)
     {
         return new ResultList<T>(){
             Succeeded = false, Message = messages

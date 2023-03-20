@@ -9,165 +9,165 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Restaurante.Client
 build_property.RootNamespace = Restaurante.Client
-build_property.ProjectDir = c:\WorkSpace\LP\LP4\Restaurante\Client\
+build_property.ProjectDir = C:\WorkSpace\LP\LP4\Restaurante\Client\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\WorkSpace\LP\LP4\Restaurante\Client
+build_property.MSBuildProjectDirectory = C:\WorkSpace\LP\LP4\Restaurante\Client
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/App.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Clientes/AddEditCliente.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Clientes/AddEditCliente.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50ZXNcQWRkRWRpdENsaWVudGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Clientes/Index.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Clientes/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50ZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Clientes/_Imports.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Clientes/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50ZXNcX0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Facturas/AddEditFactura.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Facturas/AddEditFactura.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmFjdHVyYXNcQWRkRWRpdEZhY3R1cmEucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Facturas/Index.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Facturas/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmFjdHVyYXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Facturas/_Imports.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Facturas/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmFjdHVyYXNcX0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Index.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/MesaStatutes/AddEditMesaStatus.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/MesaStatutes/AddEditMesaStatus.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVzYVN0YXR1dGVzXEFkZEVkaXRNZXNhU3RhdHVzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/MesaStatutes/Index.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/MesaStatutes/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVzYVN0YXR1dGVzXEluZGV4LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/MesaStatutes/_Imports.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/MesaStatutes/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVzYVN0YXR1dGVzXF9JbXBvcnRzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Mesas/AddEditMesa.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Mesas/AddEditMesa.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVzYXNcQWRkRWRpdE1lc2EucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Mesas/Index.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Mesas/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVzYXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Mesas/_Imports.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Mesas/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVzYXNcX0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/MetodoPagos/AddEditMetodosPagos.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/MetodoPagos/AddEditMetodosPagos.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWV0b2RvUGFnb3NcQWRkRWRpdE1ldG9kb3NQYWdvcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/MetodoPagos/Index.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/MetodoPagos/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWV0b2RvUGFnb3NcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/MetodoPagos/_Imports.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/MetodoPagos/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWV0b2RvUGFnb3NcX0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/PedidoStatuses/AddEditPedidoStatus.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/PedidoStatuses/AddEditPedidoStatus.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVkaWRvU3RhdHVzZXNcQWRkRWRpdFBlZGlkb1N0YXR1cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/PedidoStatuses/Index.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/PedidoStatuses/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVkaWRvU3RhdHVzZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/PedidoStatuses/_Imports.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/PedidoStatuses/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVkaWRvU3RhdHVzZXNcX0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Pedidos/AddEditPedido.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Pedidos/AddEditPedido.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVkaWRvc1xBZGRFZGl0UGVkaWRvLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Pedidos/Index.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Pedidos/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVkaWRvc1xJbmRleC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Pedidos/_Imports.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Pedidos/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVkaWRvc1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Productos/AddEditProducto.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Productos/AddEditProducto.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdG9zXEFkZEVkaXRQcm9kdWN0by5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Productos/Index.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Productos/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdG9zXEluZGV4LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Productos/_Imports.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Productos/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdG9zXF9JbXBvcnRzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Reservaciones/AddEditReservacion.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Reservaciones/AddEditReservacion.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXJ2YWNpb25lc1xBZGRFZGl0UmVzZXJ2YWNpb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Reservaciones/Index.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Reservaciones/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXJ2YWNpb25lc1xJbmRleC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Reservaciones/_Imports.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Reservaciones/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXJ2YWNpb25lc1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/UsuarioRoles/AddEditRol.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/UsuarioRoles/AddEditRol.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb1JvbGVzXEFkZEVkaXRSb2wucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/UsuarioRoles/Index.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/UsuarioRoles/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb1JvbGVzXEluZGV4LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/UsuarioRoles/_Imports.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/UsuarioRoles/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb1JvbGVzXF9JbXBvcnRzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Usuarios/AddEditUsuario.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Usuarios/AddEditUsuario.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb3NcQWRkRWRpdFVzdWFyaW8ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Usuarios/Index.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Usuarios/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb3NcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Usuarios/_Imports.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Pages/Usuarios/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb3NcX0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Shared/SurveyPrompt.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/_Imports.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Shared/MainLayout.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-nlb434iimj
 
-[c:/WorkSpace/LP/LP4/Restaurante/Client/Shared/NavMenu.razor]
+[C:/WorkSpace/LP/LP4/Restaurante/Client/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-3zjhaperzk
