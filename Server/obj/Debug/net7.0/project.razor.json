@@ -6078,6 +6078,43 @@
         }
       },
       {
+        "HashCode": 1094112196,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Usuarios.Index",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Usuarios.Index",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Usuarios",
+          "Common.TypeNameIdentifier": "Index"
+        }
+      },
+      {
+        "HashCode": 127099970,
+        "Kind": "Components.Component",
+        "Name": "Restaurante.Client.Pages.Usuarios.Index",
+        "AssemblyName": "Restaurante.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Restaurante.Client.Pages.Usuarios.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Restaurante.Client.Pages.Usuarios.Index",
+          "Common.TypeNamespace": "Restaurante.Client.Pages.Usuarios",
+          "Common.TypeNameIdentifier": "Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 551214877,
         "Kind": "Components.Component",
         "Name": "Restaurante.Client.Pages.Usuarios.AddEditUsuario",
@@ -6133,43 +6170,6 @@
           "Common.TypeName": "Restaurante.Client.Pages.Usuarios.AddEditUsuario",
           "Common.TypeNamespace": "Restaurante.Client.Pages.Usuarios",
           "Common.TypeNameIdentifier": "AddEditUsuario",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1094112196,
-        "Kind": "Components.Component",
-        "Name": "Restaurante.Client.Pages.Usuarios.Index",
-        "AssemblyName": "Restaurante.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Restaurante.Client.Pages.Usuarios.Index",
-          "Common.TypeNamespace": "Restaurante.Client.Pages.Usuarios",
-          "Common.TypeNameIdentifier": "Index"
-        }
-      },
-      {
-        "HashCode": 127099970,
-        "Kind": "Components.Component",
-        "Name": "Restaurante.Client.Pages.Usuarios.Index",
-        "AssemblyName": "Restaurante.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Restaurante.Client.Pages.Usuarios.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Restaurante.Client.Pages.Usuarios.Index",
-          "Common.TypeNamespace": "Restaurante.Client.Pages.Usuarios",
-          "Common.TypeNameIdentifier": "Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
