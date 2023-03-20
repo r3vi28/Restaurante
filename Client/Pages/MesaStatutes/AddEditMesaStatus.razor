@@ -1,0 +1,42 @@
+@page "/rol/crear"
+@page "/rol/editar/{Id:int}"
+<EditForm Model="@MesaStatus" OnValidSubmit="Send">
+<h1>@Titulo</h1>
+    <DataAnnotationsValidator/>
+    <ValidationSummary/>
+    <div class="form-group">
+        <label>Nombre</label>
+        <InputText class="form-control" @bind-Value="MesaStatus.Nombre"></InputText>
+    </div>
+    
+    
+    <button type="submit" class="mt-2 btn btn-success  btn-with-margin">Guardar</button>
+</EditForm>
+
+@code
+{
+[Parameter]
+public int Id { get; set; } = 0;
+
+public string Titulo => Id>0? "Editar rol":"Crear rol";
+
+public MesaStatusUpdateRequest MesaStatus { get; set; } = new MesaStatusUpdateRequest();
+
+protected override async Task OnInitializedAsync()
+{
+    if(Id!=0){
+        var resultado = await mesaStatusesManager.GetByIdAsync(Id);
+        if(resultado.Succeeded){
+            MesaStatus.Id = resultado.Data.Id;
+            MesaStatus.Nombre = resultado.Data.Nombre;
+            StateHasChanged();
+        }
+    }
+}
+        
+    public async void Send()
+    {
+            var resultado = await mesaStatusesManager.CreateAsync(MesaStatus);
+            if(resultado.Succeeded) urlHelper.NavigateTo("/mesastatuses");
+    }
+}

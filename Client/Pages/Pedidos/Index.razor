@@ -1,0 +1,61 @@
+
+
+@page "/pedidos"
+<h1>Pedidos</h1>
+<button @onclick="Agregar" class="btn btn-success" style="margin-bottom: 5px;">Agregar</button>
+@if(Pedidos != null)
+{
+    <table class="table">
+        <thead class="table-dark">
+            <tr>
+                <th>Id</th>
+                <th>Productos</th>
+                <th>Estado</th>
+                <th>Fecha de entrega</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var pedido in Pedidos)
+            {
+                <tr>
+                    <td>@pedido.Id</td>
+                    <td>@pedido.Productos.Nombre $@pedido.Productos.Precio</td>
+                    <td>@pedido.PedidoStatus.Nombre</td>
+                    <td>@pedido.DeliveryTime</td>
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                            <button class="btn btn-outline-warning" @onclick="()=>Editar(pedido.Id)">Editar</button>
+                            <button class="btn btn-outline-danger">Eliminar</button>
+                    </div>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Cargando...</p>
+}
+
+@code
+{
+    public List<PedidoRecord>? Pedidos { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await pedidosManager.GetAsync();
+        if(response.Succeeded){
+            Pedidos = response.Items.ToList();
+        }
+    }
+
+    public void Agregar()
+    {
+        urlHelper.NavigateTo("/rol/crear",false);
+    }
+
+    public void Editar(int Id)
+    {
+        urlHelper.NavigateTo($"/rol/editar/{Id}",false);
+    }
+}
+

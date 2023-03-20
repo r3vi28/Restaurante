@@ -1,0 +1,61 @@
+
+
+@page "/productos"
+<h1>Productos</h1>
+<button @onclick="Agregar" class="btn btn-success" style="margin-bottom: 5px;">Agregar</button>
+@if(Productos != null)
+{
+    <table class="table">
+        <thead class="table-dark">
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Descripcion</th>
+                <th>Precio</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var producto in  Productos)
+            {
+                <tr>
+                    <td>@producto.Id</td>
+                    <td>@producto.Nombre</td>
+                    <td>@producto.Descripcion</td>
+                    <td>@producto.Precio</td>
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                            <button class="btn btn-outline-warning" @onclick="()=>Editar(producto.Id)">Editar</button>
+                            <button class="btn btn-outline-danger">Eliminar</button>
+                    </div>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Cargando...</p>
+}
+
+@code
+{
+    public List<ProductoRecord>? Productos { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await productosManager.GetAsync();
+        if(response.Succeeded){
+            Productos = response.Items.ToList();
+        }
+    }
+
+    public void Agregar()
+    {
+        urlHelper.NavigateTo("/rol/crear",false);
+    }
+
+    public void Editar(int Id)
+    {
+        urlHelper.NavigateTo($"/rol/editar/{Id}",false);
+    }
+}
+

@@ -5,9 +5,6 @@ namespace Restaurante.Shared.Requests;
 
 public class RolUsuarioUpdateRequest: RolUsuarioCreateRequest
 {
-    [   
-        Required(ErrorMessage = "Ingrese un Id valido"),
-        Range(1, int.MaxValue, ErrorMessage = "Ingrese un Id valido")
-    ]
+    [Required(ErrorMessage = "Se debe proporcionar el Id del rol a modificar")]
     public int Id { get; set; }
 }

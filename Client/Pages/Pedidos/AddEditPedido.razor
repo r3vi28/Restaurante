@@ -1,0 +1,52 @@
+@page "/rol/crear"
+@page "/rol/editar/{Id:int}"
+<EditForm Model="@Pedido" OnValidSubmit="Send">
+<h1>@Titulo</h1>
+    <DataAnnotationsValidator/>
+    <ValidationSummary/>
+    <div class="form-group">
+        <label>Productos:</label>
+        <InputNumber class="form-control" @bind-Value="Pedido.ProductoId"></InputNumber>
+    </div>
+    <div class="form-group">
+        <label>Estado del Pedido:</label>
+        <InputNumber class="form-control" @bind-Value="Pedido.PedidoStatusId"></InputNumber>
+    </div>
+    <div class="form-group">
+        <label>Fecha:</label>
+        <InputDate class="form-control" @bind-Value="Pedido.DeliveryTime"></InputDate>
+    </div>
+    
+    
+    <button type="submit" class="mt-2 btn btn-success  btn-with-margin">Guardar</button>
+</EditForm>
+
+@code
+{
+[Parameter]
+public int Id { get; set; } = 0;
+
+public string Titulo => Id>0? "Editar rol":"Crear rol";
+
+public PedidoUpdateRequest Pedido { get; set; } = new PedidoUpdateRequest();
+
+protected override async Task OnInitializedAsync()
+{
+    if(Id!=0){
+        var resultado = await pedidosManager.GetByIdAsync(Id);
+        if(resultado.Succeeded){
+            Pedido.Id = resultado.Data.Id;
+            Pedido.ProductoId = resultado.Data.ProductoId;
+            Pedido.PedidoStatusId = resultado.Data.PedidoStatusId;
+            Pedido.DeliveryTime = resultado.Data.DeliveryTime;
+            StateHasChanged();
+        }
+    }
+}
+        
+    public async void Send()
+    {
+            var resultado = await pedidosManager.CreateAsync(Pedido);
+            if(resultado.Succeeded) urlHelper.NavigateTo("/pedidos");
+    }
+}

@@ -22,30 +22,6 @@ namespace Restaurante.Server.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Restaurante.Server.Models.AsignacionMesa", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("Hora")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("MesaId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("MesaStatusId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("MesaId");
-
-                    b.ToTable("AsignacionMesas");
-                });
-
             modelBuilder.Entity("Restaurante.Server.Models.Cliente", b =>
                 {
                     b.Property<int>("Id")
@@ -103,6 +79,8 @@ namespace Restaurante.Server.Migrations
 
                     b.HasIndex("MetodoPagoId");
 
+                    b.HasIndex("ProductoId");
+
                     b.ToTable("Facturas");
                 });
 
@@ -114,10 +92,15 @@ namespace Restaurante.Server.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("MesaStatusId")
+                        .HasColumnType("int");
+
                     b.Property<int>("Tamaño")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("MesaStatusId");
 
                     b.ToTable("Mesas");
                 });
@@ -130,16 +113,11 @@ namespace Restaurante.Server.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("AsignacionMesaId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("AsignacionMesaId");
 
                     b.ToTable("MesaStatuses");
                 });
@@ -186,6 +164,8 @@ namespace Restaurante.Server.Migrations
 
                     b.HasIndex("PedidoStatusId");
 
+                    b.HasIndex("ProductoId");
+
                     b.ToTable("Pedidos");
                 });
 
@@ -218,56 +198,16 @@ namespace Restaurante.Server.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("FacturaId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("PedidoId")
-                        .HasColumnType("int");
-
                     b.Property<float>("Precio")
                         .HasColumnType("real");
 
-                    b.Property<int?>("ReporteId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("FacturaId");
-
-                    b.HasIndex("PedidoId");
-
-                    b.HasIndex("ReporteId");
 
                     b.ToTable("Productos");
-                });
-
-            modelBuilder.Entity("Restaurante.Server.Models.Reporte", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("FechaFinal")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("FechaInicio")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("ProductosMasVendidosId")
-                        .HasColumnType("int");
-
-                    b.Property<float>("VentasTotales")
-                        .HasColumnType("real");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Reportes");
                 });
 
             modelBuilder.Entity("Restaurante.Server.Models.Reservacion", b =>
@@ -358,17 +298,6 @@ namespace Restaurante.Server.Migrations
                     b.ToTable("Usuarios");
                 });
 
-            modelBuilder.Entity("Restaurante.Server.Models.AsignacionMesa", b =>
-                {
-                    b.HasOne("Restaurante.Server.Models.Mesa", "Mesa")
-                        .WithMany()
-                        .HasForeignKey("MesaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Mesa");
-                });
-
             modelBuilder.Entity("Restaurante.Server.Models.Factura", b =>
                 {
                     b.HasOne("Restaurante.Server.Models.Usuario", "CajeroNombre")
@@ -383,42 +312,47 @@ namespace Restaurante.Server.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Restaurante.Server.Models.Producto", "Productos")
+                        .WithMany()
+                        .HasForeignKey("ProductoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("CajeroNombre");
 
                     b.Navigation("MetodoPago");
+
+                    b.Navigation("Productos");
                 });
 
-            modelBuilder.Entity("Restaurante.Server.Models.MesaStatus", b =>
+            modelBuilder.Entity("Restaurante.Server.Models.Mesa", b =>
                 {
-                    b.HasOne("Restaurante.Server.Models.AsignacionMesa", null)
-                        .WithMany("MesaStatus")
-                        .HasForeignKey("AsignacionMesaId");
+                    b.HasOne("Restaurante.Server.Models.MesaStatus", "MesaStatus")
+                        .WithMany()
+                        .HasForeignKey("MesaStatusId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("MesaStatus");
                 });
 
             modelBuilder.Entity("Restaurante.Server.Models.Pedido", b =>
                 {
-                    b.HasOne("Restaurante.Server.Models.PedidoStatus", "Status")
+                    b.HasOne("Restaurante.Server.Models.PedidoStatus", "PedidoStatus")
                         .WithMany()
                         .HasForeignKey("PedidoStatusId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Status");
-                });
+                    b.HasOne("Restaurante.Server.Models.Producto", "Productos")
+                        .WithMany()
+                        .HasForeignKey("ProductoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-            modelBuilder.Entity("Restaurante.Server.Models.Producto", b =>
-                {
-                    b.HasOne("Restaurante.Server.Models.Factura", null)
-                        .WithMany("Productos")
-                        .HasForeignKey("FacturaId");
+                    b.Navigation("PedidoStatus");
 
-                    b.HasOne("Restaurante.Server.Models.Pedido", null)
-                        .WithMany("Productos")
-                        .HasForeignKey("PedidoId");
-
-                    b.HasOne("Restaurante.Server.Models.Reporte", null)
-                        .WithMany("ProductosMasVendidos")
-                        .HasForeignKey("ReporteId");
+                    b.Navigation("Productos");
                 });
 
             modelBuilder.Entity("Restaurante.Server.Models.Reservacion", b =>
@@ -449,26 +383,6 @@ namespace Restaurante.Server.Migrations
                         .IsRequired();
 
                     b.Navigation("UsuarioRol");
-                });
-
-            modelBuilder.Entity("Restaurante.Server.Models.AsignacionMesa", b =>
-                {
-                    b.Navigation("MesaStatus");
-                });
-
-            modelBuilder.Entity("Restaurante.Server.Models.Factura", b =>
-                {
-                    b.Navigation("Productos");
-                });
-
-            modelBuilder.Entity("Restaurante.Server.Models.Pedido", b =>
-                {
-                    b.Navigation("Productos");
-                });
-
-            modelBuilder.Entity("Restaurante.Server.Models.Reporte", b =>
-                {
-                    b.Navigation("ProductosMasVendidos");
                 });
 #pragma warning restore 612, 618
         }

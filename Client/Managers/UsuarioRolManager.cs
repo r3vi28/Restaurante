@@ -1,3 +1,4 @@
+using System.Net;
 using Restaurante.Shared.Wrapper;
 using Restaurante.Shared.Records;
 using Restaurante.Shared.Routes;

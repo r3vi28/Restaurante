@@ -1,0 +1,47 @@
+@page "/rol/crear"
+@page "/rol/editar/{Id:int}"
+<EditForm Model="@Metodo" OnValidSubmit="Send">
+<h1>@Titulo</h1>
+    <DataAnnotationsValidator/>
+    <ValidationSummary/>
+    <div class="form-group">
+        <label>Nombre: </label>
+        <InputText class="form-control" @bind-Value="Metodo.Nombre"></InputText>
+    </div>
+    <div class="form-group">
+        <label>Description: </label>
+        <InputText class="form-control" style="max-width: 100px;" @bind-Value="Metodo.Descripcion"></InputText>
+    </div>
+    
+    
+    <button type="submit" class="mt-2 btn btn-success  btn-with-margin">Guardar</button>
+</EditForm>
+
+@code
+{
+[Parameter]
+public int Id { get; set; } = 0;
+
+public string Titulo => Id>0? "Editar rol":"Crear rol";
+
+public MetodoPagoUpdateRequest Metodo { get; set; } = new MetodoPagoUpdateRequest();
+
+protected override async Task OnInitializedAsync()
+{
+    if(Id!=0){
+        var resultado = await metodosManager.GetByIdAsync(Id);
+        if(resultado.Succeeded){
+            Metodo.Id = resultado.Data.Id;
+            Metodo.Nombre = resultado.Data.Nombre;
+            Metodo.Descripcion = resultado.Data.Descripcion;
+            StateHasChanged();
+        }
+    }
+}
+        
+    public async void Send()
+    {
+            var resultado = await metodosManager.CreateAsync(Metodo);
+            if(resultado.Succeeded) urlHelper.NavigateTo("/metodospagos");
+    }
+}

@@ -1,0 +1,47 @@
+@page "/rol/crear"
+@page "/rol/editar/{Id:int}"
+<EditForm Model="@Mesa" OnValidSubmit="Send">
+<h1>@Titulo</h1>
+    <DataAnnotationsValidator/>
+    <ValidationSummary/>
+    <div class="form-group">
+        <label>Tamaño:</label>
+        <InputNumber class="form-control" @bind-Value="Mesa.Tamaño"></InputNumber>
+    </div>
+    <div class="form-group">
+        <label>Estado de Mesa:</label>
+        <InputNumber class="form-control" @bind-Value="Mesa.MesaStatusId"></InputNumber>
+    </div>
+    
+    
+    <button type="submit" class="mt-2 btn btn-success  btn-with-margin">Guardar</button>
+</EditForm>
+
+@code
+{
+[Parameter]
+public int Id { get; set; } = 0;
+
+public string Titulo => Id>0? "Editar rol":"Crear rol";
+
+public MesaUpdateRequest Mesa { get; set; } = new MesaUpdateRequest();
+
+protected override async Task OnInitializedAsync()
+{
+    if(Id!=0){
+        var resultado = await mesasManager.GetByIdAsync(Id);
+        if(resultado.Succeeded){
+            Mesa.Id = resultado.Data.Id;
+            Mesa.Tamaño = resultado.Data.Tamaño;
+            Mesa.MesaStatusId = resultado.Data.MesaStatusId;
+            StateHasChanged();
+        }
+    }
+}
+        
+    public async void Send()
+    {
+            var resultado = await mesasManager.CreateAsync(Mesa);
+            if(resultado.Succeeded) urlHelper.NavigateTo("/mesas");
+    }
+}

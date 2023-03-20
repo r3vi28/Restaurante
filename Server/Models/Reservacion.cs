@@ -11,7 +11,6 @@ public class Reservacion
     public int ClienteId { get; set; }
     public virtual Cliente Cliente { get; set; } = null!;
     public DateTime Fecha { get; set; }
-    public TimeSpan Hora { get; set; }
     public int NumeroPersonas { get; set; }
     public int MesaId { get; set; }
     public virtual Mesa MesaElegida { get; set; } = null!;
@@ -21,7 +20,6 @@ public class Reservacion
         return new Reservacion(){
             ClienteId = request.ClienteId,
             Fecha = request.Fecha,
-            Hora = request.Hora,
             NumeroPersonas = request.NumeroPersonas,
             MesaId = request.MesaId
         };
@@ -33,8 +31,6 @@ public class Reservacion
             ClienteId = request.ClienteId;
         if(Fecha != request.Fecha)
             Fecha = request.Fecha;
-        if(Hora != request.Hora)
-            Hora = request.Hora;
         if(NumeroPersonas != request.NumeroPersonas)
             NumeroPersonas = request.NumeroPersonas;
         if(MesaId != request.MesaId)
@@ -43,6 +39,6 @@ public class Reservacion
 
     public ReservacionRecord ToRecord()
     {
-        return new ReservacionRecord(Id, ClienteId, Cliente.ToRecord(), Fecha, Hora, NumeroPersonas, MesaId, MesaElegida.ToRecord());
+        return new ReservacionRecord(Id, ClienteId, Cliente.ToRecord(), Fecha, NumeroPersonas, MesaId, MesaElegida.ToRecord());
     }
 }

@@ -10,7 +10,6 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 builder.Services.AddScoped<IUsuarioRolManager, UsuarioRolManager>();
-builder.Services.AddScoped<IAsignacionMesaManager, AsignacionMesaManager>();
 builder.Services.AddScoped<IClienteManager, ClienteManager>();
 builder.Services.AddScoped<IFacturaManager, FacturaManager>();
 builder.Services.AddScoped<IMesaManager, MesaManager>();
@@ -19,7 +18,6 @@ builder.Services.AddScoped<IMetodoPagoManager, MetodoPagoManager>();
 builder.Services.AddScoped<IPedidoManager, PedidoManager>();
 builder.Services.AddScoped<IPedidoStatusManager, PedidoStatusManager>();
 builder.Services.AddScoped<IProductoManager, ProductoManager>();
-builder.Services.AddScoped<IReporteManager, ReporteManager>();
 builder.Services.AddScoped<IReservacionManager, ReservacionManager>();
 builder.Services.AddScoped<IUsuarioManager, UsuarioManager>();
 

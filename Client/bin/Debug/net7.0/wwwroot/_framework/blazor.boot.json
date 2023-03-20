@@ -199,15 +199,15 @@
       "mscorlib.dll": "sha256-T52Qf1cS\/UysEoWOoE2ptEJEXfGpanQX5KNLyDiLv1E=",
       "netstandard.dll": "sha256-p32h5P3QmHJ\/FGoeE6m7f5g\/8ng2PSPGZktHyMadvIs=",
       "System.Private.CoreLib.dll": "sha256-6MwQcyKbqBsoZYOcD9fQJ4iKcn1qMmWRWVEkU2LLCb0=",
-      "Restaurante.Shared.dll": "sha256-ebm70gbBgYtWmz5Ye7WVZhlI2\/7iYk9Xb4g4MaWRamM=",
-      "Restaurante.Client.dll": "sha256-iWYYEn4tAFpfJXa5nDDi1g5uZbpxQ8OgzxPsaiAqac8="
+      "Restaurante.Shared.dll": "sha256-ZU3LKABes5SaMJlWMMkTuyPjpIWK9wlTewQ4q5Lj+H4=",
+      "Restaurante.Client.dll": "sha256-tZGq5gNLMEXP\/eB+GdosRhv0wMLL5dlA6eanGFhjiHM="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Restaurante.Shared.pdb": "sha256-vFic270BG47XJLZ447QzH24wokAMt1wp4EZCQ5HEqa4=",
-      "Restaurante.Client.pdb": "sha256-DMta5rHWCSGb9\/kRrrD5b77t2O1u56Xs3zVBccOUrsM="
+      "Restaurante.Shared.pdb": "sha256-DboBgm6A\/hYUpcVeOg3DOVRF1BAC55yDdOHZ3UrfGt8=",
+      "Restaurante.Client.pdb": "sha256-CQvI8\/TSD5Oj7YLWH5YAfsZllYhDMe54bUV1bwtN2gA="
     },
     "runtime": {
       "dotnet.7.0.2.t0mszhzzw0.js": "sha256-4mh03qTse0uNR+dQ6ydExm4jJXph0RE8zGNCtF0jiNA=",

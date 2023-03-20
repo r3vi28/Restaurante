@@ -1,0 +1,51 @@
+@page "/rol/crear"
+@page "/rol/editar/{Id:int}"
+<EditForm Model="@Producto" OnValidSubmit="Send">
+<h1>@Titulo</h1>
+    <DataAnnotationsValidator/>
+    <ValidationSummary/>
+    <div class="form-group">
+        <label>Nombre: </label>
+        <InputText class="form-control" @bind-Value="Producto.Nombre"></InputText>
+    </div>
+    <div class="form-group">
+        <label>Descripción: </label>
+        <InputText class="form-control" @bind-Value="Producto.Descripcion"></InputText>
+    </div>
+    <div class="form-group">
+        <label>Precio: </label>
+        <InputNumber class="form-control" @bind-Value="Producto.Precio"></InputNumber>
+    </div>
+    
+    <button type="submit" class="mt-2 btn btn-success  btn-with-margin">Guardar</button>
+</EditForm>
+
+@code
+{
+[Parameter]
+public int Id { get; set; } = 0;
+
+public string Titulo => Id>0? "Editar rol":"Crear rol";
+
+public ProductoUpdateRequest Producto { get; set; } = new ProductoUpdateRequest();
+
+protected override async Task OnInitializedAsync()
+{
+    if(Id!=0){
+        var resultado = await productosManager.GetByIdAsync(Id);
+        if(resultado.Succeeded){
+            Producto.Id = resultado.Data.Id;
+            Producto.Nombre = resultado.Data.Nombre;
+            Producto.Descripcion = resultado.Data.Descripcion;
+            Producto.Precio = resultado.Data.Precio;
+            StateHasChanged();
+        }
+    }
+}
+        
+    public async void Send()
+    {
+            var resultado = await productosManager.CreateAsync(Producto);
+            if(resultado.Succeeded) urlHelper.NavigateTo("/productos");
+    }
+}

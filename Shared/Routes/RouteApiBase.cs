@@ -8,13 +8,6 @@ public class RouteApiBase
     public const string IdParameter = "{Id:int}";
 }
 
-public class AsignacionMesaRouteManager: RouteApiBase
-{
-    public const string BASE = $"{API}/asignacionesmesas";
-    public const string GetById = $"{BASE}/{IdParameter}"; // /api/asignacionesmesas/{Id:int}
-    public static string BuildRoute(int Id) => GetById.Replace(IdParameter,Id.ToString());
-}
-
 public class ClienteRouteManager: RouteApiBase
 {
     public const string BASE = $"{API}/clientes";
@@ -71,12 +64,7 @@ public class ProductoRouteManager: RouteApiBase
     public static string BuildRoute(int Id) => GetById.Replace(IdParameter,Id.ToString());
 }
 
-public class ReporteRouteManager: RouteApiBase
-{
-    public const string BASE = $"{API}/reportes";
-    public const string GetById = $"{BASE}/{IdParameter}";
-    public static string BuildRoute(int Id) => GetById.Replace(IdParameter,Id.ToString());
-}
+
 
 public class ReservacionRouteManager: RouteApiBase
 {

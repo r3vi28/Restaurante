@@ -4,7 +4,6 @@ namespace Restaurante.Server.Context;
 
 public interface IMyDbContext
 {
-    DbSet<AsignacionMesa> AsignacionMesas { get; set; }
     DbSet<Cliente> Clientes { get; set; }
     DbSet<Factura> Facturas { get; set; }
     DbSet<Mesa> Mesas { get; set; }
@@ -13,7 +12,6 @@ public interface IMyDbContext
     DbSet<Pedido> Pedidos { get; set; }
     DbSet<PedidoStatus> PedidoStatuses { get; set; }
     DbSet<Producto> Productos { get; set; }
-    DbSet<Reporte> Reportes { get; set; }
     DbSet<Reservacion> Reservaciones { get; set; }
     DbSet<RolUsuario> RolUsuarios { get; set; }
     DbSet<Usuario> Usuarios { get; set; }
@@ -39,7 +37,6 @@ public class MyDbContext : DbContext, IMyDbContext
     }
 
     #region Tablas de mi base de datos
-    public DbSet<AsignacionMesa> AsignacionMesas { get; set; } = null!;
     public DbSet<Cliente> Clientes { get; set; } = null!;
     public DbSet<Factura> Facturas { get; set; } = null!;
     public DbSet<Mesa> Mesas { get; set; } = null!;
@@ -48,7 +45,6 @@ public class MyDbContext : DbContext, IMyDbContext
     public DbSet<Pedido> Pedidos { get; set; } = null!;
     public DbSet<PedidoStatus> PedidoStatuses { get; set; } = null!;
     public DbSet<Producto> Productos { get; set; } = null!;
-    public DbSet<Reporte> Reportes { get; set; } = null!;
     public DbSet<Reservacion> Reservaciones { get; set; } = null!;
     public DbSet<RolUsuario> RolUsuarios { get; set; } = null!;
     public DbSet<Usuario> Usuarios { get; set; } = null!;

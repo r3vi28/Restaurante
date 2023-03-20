@@ -25,9 +25,9 @@ public class Create : EndpointBaseAsync.WithRequest<Request>.WithActionResult<Re
     {
         try{
             #region Validaciones
-            var reservacion = await dbContext.Reservaciones.FirstOrDefaultAsync(r => r.MesaId == request.MesaId && r.Hora == request.Hora,cancellationToken);
+            var reservacion = await dbContext.Reservaciones.FirstOrDefaultAsync(r => r.MesaId == request.MesaId && r.Fecha == request.Fecha,cancellationToken);
             if(reservacion != null)
-                return Respuesta.Fail($"Ya existe una reservacion con hora y fecha '({request.Hora})', y mesa ''({request.MesaId}).");
+                return Respuesta.Fail($"Ya existe una reservacion con hora y fecha '({request.Fecha})', y mesa ''({request.MesaId}).");
             #endregion
             reservacion = Reservacion.Crear(request);
             dbContext.Reservaciones.Add(reservacion);

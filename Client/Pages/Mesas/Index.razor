@@ -1,0 +1,58 @@
+
+@page "/mesas"
+<h1>Mesas</h1>
+<button @onclick="Agregar" class="btn btn-success" style="margin-bottom: 5px;">Agregar</button>
+@if(Mesas != null)
+{
+    <table class="table">
+        <thead class="table-dark">
+            <tr>
+                <th>Id</th>
+                <th>Tamaño</th>
+                <th>Estado de la mesa</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var mesa in Mesas)
+            {
+                <tr>
+                    <td>@mesa.Id</td>
+                    <td>@mesa.Tamaño</td>
+                    <td>@mesa.MesaStatus.Nombre</td>
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                            <button class="btn btn-outline-warning" @onclick="()=>Editar(mesa.Id)">Editar</button>
+                            <button class="btn btn-outline-danger">Eliminar</button>
+                    </div>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Cargando...</p>
+}
+
+@code
+{
+    public List<MesaRecord>? Mesas { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await mesasManager.GetAsync();
+        if(response.Succeeded){
+            Mesas = response.Items.ToList();
+        }
+    }
+
+    public void Agregar()
+    {
+        urlHelper.NavigateTo("/rol/crear",false);
+    }
+
+    public void Editar(int Id)
+    {
+        urlHelper.NavigateTo($"/rol/editar/{Id}",false);
+    }
+}
+
